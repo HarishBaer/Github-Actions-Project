@@ -36,7 +36,7 @@ public class AccountService implements UserDetailsService {
     }
 
     public Account registerAccount(String username, String password) {
-        if (accountRepository.findByUsername(username).isPresent()) {
+        if (accountRepository.findByUsername("hbaer").isPresent()) {
             throw new RuntimeException("Username already exists");
         }
 
